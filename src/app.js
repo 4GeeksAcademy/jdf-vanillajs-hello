@@ -10,12 +10,24 @@ let action = ['ate', 'peed', 'crushed', 'broke'];
 let what = ['my homework', 'my phone', 'the car'];
 let when = ['before the class', 'when I was sleeping', 'while I was exercising', 'during my lunch', 'while I was praying'];
 
-const randomnumber = Math.floor(Math.random()* length -1);
-console.log(randomnumber);
+const myElement = document.getElementById('myElement')
+console.log(myElement)
+function randomnumber(length){
+  return Math.floor(Math.random * length -1);
+}
+
+
+function getRandomPosition (){
+  return myArray (randomnumber(myArray.length));
+}
 
 
 window.onload = function() {
-  Math.random(Math.floor()*3)
+ const randomnum = randomnumber();
+
+ const myElement = document.getElementById('myElement')
+
+ myElement.innerHTML = randomnum
 
   console.log();
 };
